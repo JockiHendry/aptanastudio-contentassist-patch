@@ -12,21 +12,20 @@ I will just put it here.
 
 Features
 --------
-1.  Content assist support more than one function with the same name but different parameters.  This kind of 
+*  Content assist support more than one function with the same name but different parameters.  This kind of 
     'polymorphism' can be seen in jQuery API documentation.
 
 ![Content assist support polymorphism](https://github.com/JockiHendry/aptanastudio-contentassist-patch/wiki/screenshot1.png)
-
-2.  When chaining function call in jQuery, content assist is still working and showing proposals for the new function.
+*  When chaining function call in jQuery, content assist is still working and showing proposals for the new function.
 
 ![Content assist still working when chaining function call](https://github.com/JockiHendry/aptanastudio-contentassist-patch/wiki/screenshot2.png)
 
-3.  Context info will be displayed for selected jQuery function proposal.  Description for parameters are taken from
+*  Context info will be displayed for selected jQuery function proposal.  Description for parameters are taken from
     jQuery API documentation.  Context info for some proposals also include example.
 
 ![Information for parameters and examples](https://github.com/JockiHendry/aptanastudio-contentassist-patch/wiki/screenshot3.png)
 
-4.  jQuery content assist will work properly inside HTML documents.  This is not true in the official relase.
+*  jQuery content assist will work properly inside HTML documents.  This is not true in the official relase.
 
 ![jQuery content assist works not only in Javascript file but also in HTML file](https://github.com/JockiHendry/aptanastudio-contentassist-patch/wiki/screenshot4.png)
 
