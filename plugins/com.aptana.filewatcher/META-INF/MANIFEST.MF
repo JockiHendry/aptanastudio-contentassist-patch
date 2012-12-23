@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %Bundle-Name
+Bundle-SymbolicName: com.aptana.filewatcher
+Bundle-Version: 3.0.1.qualifier
+Bundle-Vendor: %Bundle-Vendor
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-ClassPath: .
+Require-Bundle: org.eclipse.core.resources,
+ org.eclipse.core.runtime,
+ com.aptana.core.epl
+Export-Package: com.aptana.filewatcher,
+ net.contentobjects.jnotify
+Bundle-ActivationPolicy: lazy
+Bundle-Activator: com.aptana.filewatcher.FileWatcherPlugin
+Eclipse-ExtensibleAPI: true

@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+
+<product name="Aptana Studio 3" uid="aptana.product" id="com.aptana.rcp.product" application="com.aptana.rcp.application" version="0.0.0.qualifier" useFeatures="true" includeLaunchers="true">
+
+   <aboutInfo>
+      <image path="/com.aptana.rcp/content/about.gif"/>
+      <text>
+         %aboutText
+      </text>
+   </aboutInfo>
+
+   <configIni use="default">
+   </configIni>
+
+   <launcherArgs>
+      <programArgs>--launcher.XXMaxPermSize
+256m
+--launcher.defaultAction
+openFile</programArgs>
+      <programArgsMac>-startup
+../../../plugins/org.eclipse.equinox.launcher_1.1.1.R36x_v20101122_1400.jar</programArgsMac>
+      <vmArgs>-Xms40m
+-Xmx512m
+-Declipse.p2.unsignedPolicy=allow
+-Declipse.log.size.max=10000
+-Declipse.log.backup.max=5</vmArgs>
+      <vmArgsLin>-Djava.awt.headless=true</vmArgsLin>
+      <vmArgsMac>-Xdock:icon=../Resources/aptana.icns
+-XstartOnFirstThread
+-Dorg.eclipse.swt.internal.carbon.smallFonts</vmArgsMac>
+      <vmArgsSol>-Djava.awt.headless=true</vmArgsSol>
+      <vmArgsWin>-Djava.awt.headless=true</vmArgsWin>
+   </launcherArgs>
+
+   <windowImages i16="/com.aptana.rcp/content/window1616.png" i32="/com.aptana.rcp/content/window3232.png" i48="/com.aptana.rcp/content/window4848.png" i64="/com.aptana.rcp/content/window6464.png" i128="/com.aptana.rcp/content/window128128.png"/>
+
+   <splash
+      location="com.aptana.rcp"
+      startupProgressRect="0,260,590,15"
+      startupMessageRect="7,240,445,20"
+      startupForegroundColor="FFFFFF" />
+   <launcher name="AptanaStudio3">
+      <linux icon="/com.aptana.rcp/content/aptana.xpm"/>
+      <macosx icon="/com.aptana.rcp/content/aptana.icns"/>
+      <solaris/>
+      <win useIco="true">
+         <ico path="/com.aptana.rcp/content/aptana.ico"/>
+         <bmp/>
+      </win>
+   </launcher>
+
+   <vm>
+   </vm>
+
+   <plugins>
+      <plugin id="beaver"/>
+      <plugin id="com.amazon.s3"/>
+      <plugin id="com.aptana.branding"/>
+      <plugin id="com.aptana.browser"/>
+      <plugin id="com.aptana.build.ui"/>
+      <plugin id="com.aptana.buildpath.core"/>
+      <plugin id="com.aptana.commandline.launcher"/>
+      <plugin id="com.aptana.configurations"/>
+      <plugin id="com.aptana.console"/>
+      <plugin id="com.aptana.console.tests" fragment="true"/>
+      <plugin id="com.aptana.core"/>
+      <plugin id="com.aptana.core.epl"/>
+      <plugin id="com.aptana.core.epl.tests" fragment="true"/>
+      <plugin id="com.aptana.core.io"/>
+      <plugin id="com.aptana.core.io.tests" fragment="true"/>
+      <plugin id="com.aptana.core.tests" fragment="true"/>
+      <plugin id="com.aptana.debug.core"/>
+      <plugin id="com.aptana.debug.ui"/>
+      <plugin id="com.aptana.deploy"/>
+      <plugin id="com.aptana.deploy.capistrano"/>
+      <plugin id="com.aptana.deploy.engineyard"/>
+      <plugin id="com.aptana.deploy.epl"/>
+      <plugin id="com.aptana.deploy.heroku"/>
+      <plugin id="com.aptana.deploy.ui"/>
+      <plugin id="com.aptana.documentation"/>
+      <plugin id="com.aptana.eclipse.fullscreen.ui"/>
+      <plugin id="com.aptana.editor.beaver"/>
+      <plugin id="com.aptana.editor.coffee"/>
+      <plugin id="com.aptana.editor.common"/>
+      <plugin id="com.aptana.editor.common.override" fragment="true"/>
+      <plugin id="com.aptana.editor.common.tests" fragment="true"/>
+      <plugin id="com.aptana.editor.css"/>
+      <plugin id="com.aptana.editor.css.formatter"/>
+      <plugin id="com.aptana.editor.css.formatter.tests" fragment="true"/>
+      <plugin id="com.aptana.editor.diff"/>
+      <plugin id="com.aptana.editor.dtd"/>
+      <plugin id="com.aptana.editor.dtd.tests" fragment="true"/>
+      <plugin id="com.aptana.editor.epl"/>
+      <plugin id="com.aptana.editor.findbar"/>
+      <plugin id="com.aptana.editor.findbar.override" fragment="true"/>
+      <plugin id="com.aptana.editor.html"/>
+      <plugin id="com.aptana.editor.html.formatter"/>
+      <plugin id="com.aptana.editor.html.formatter.tests" fragment="true"/>
+      <plugin id="com.aptana.editor.idl"/>
+      <plugin id="com.aptana.editor.idl.tests" fragment="true"/>
+      <plugin id="com.aptana.editor.js"/>
+      <plugin id="com.aptana.editor.js.formatter"/>
+      <plugin id="com.aptana.editor.js.formatter.tests" fragment="true"/>
+      <plugin id="com.aptana.editor.js.tests" fragment="true"/>
+      <plugin id="com.aptana.editor.json"/>
+      <plugin id="com.aptana.editor.json.tests" fragment="true"/>
+      <plugin id="com.aptana.editor.markdown"/>
+      <plugin id="com.aptana.editor.markdown.tests" fragment="true"/>
+      <plugin id="com.aptana.editor.svg"/>
+      <plugin id="com.aptana.editor.text"/>
+      <plugin id="com.aptana.editor.xml"/>
+      <plugin id="com.aptana.editor.xml.formatter"/>
+      <plugin id="com.aptana.editor.xml.formatter.tests" fragment="true"/>
+      <plugin id="com.aptana.editor.xml.tests" fragment="true"/>
+      <plugin id="com.aptana.editor.yaml"/>
+      <plugin id="com.aptana.editor.yaml.tests" fragment="true"/>
+      <plugin id="com.aptana.explorer"/>
+      <plugin id="com.aptana.filesystem.http"/>
+      <plugin id="com.aptana.filesystem.http.tests" fragment="true"/>
+      <plugin id="com.aptana.filesystem.s3"/>
+      <plugin id="com.aptana.filesystem.s3.tests" fragment="true"/>
+      <plugin id="com.aptana.filewatcher"/>
+      <plugin id="com.aptana.formatter.epl"/>
+      <plugin id="com.aptana.formatter.ui.epl"/>
+      <plugin id="com.aptana.git.core"/>
+      <plugin id="com.aptana.git.core.tests" fragment="true"/>
+      <plugin id="com.aptana.git.ui"/>
+      <plugin id="com.aptana.ide.libraries.subscription"/>
+      <plugin id="com.aptana.ide.security.linux"/>
+      <plugin id="com.aptana.index.core"/>
+      <plugin id="com.aptana.index.core.tests" fragment="true"/>
+      <plugin id="com.aptana.index.core.ui"/>
+      <plugin id="com.aptana.jetty.util.epl"/>
+      <plugin id="com.aptana.jira.core"/>
+      <plugin id="com.aptana.jira.core.tests" fragment="true"/>
+      <plugin id="com.aptana.jira.ui"/>
+      <plugin id="com.aptana.js.core"/>
+      <plugin id="com.aptana.js.debug.core"/>
+      <plugin id="com.aptana.js.debug.core.ie" fragment="true"/>
+      <plugin id="com.aptana.js.debug.core.v8"/>
+      <plugin id="com.aptana.js.debug.ui"/>
+      <plugin id="com.aptana.js.debug.v8.ui"/>
+      <plugin id="com.aptana.libraries"/>
+      <plugin id="com.aptana.org.eclipse.tm.terminal"/>
+      <plugin id="com.aptana.parsing"/>
+      <plugin id="com.aptana.parsing.tests" fragment="true"/>
+      <plugin id="com.aptana.portablegit.win32"/>
+      <plugin id="com.aptana.portal.ui"/>
+      <plugin id="com.aptana.portal.ui.eclipse36"/>
+      <plugin id="com.aptana.portal.ui.tests" fragment="true"/>
+      <plugin id="com.aptana.preview"/>
+      <plugin id="com.aptana.projects"/>
+      <plugin id="com.aptana.rcp"/>
+      <plugin id="com.aptana.rcp.studio" fragment="true"/>
+      <plugin id="com.aptana.samples"/>
+      <plugin id="com.aptana.samples.tests" fragment="true"/>
+      <plugin id="com.aptana.samples.ui"/>
+      <plugin id="com.aptana.scripting"/>
+      <plugin id="com.aptana.scripting.tests" fragment="true"/>
+      <plugin id="com.aptana.scripting.ui"/>
+      <plugin id="com.aptana.scripting.ui.override" fragment="true"/>
+      <plugin id="com.aptana.swt.webkitbrowser"/>
+      <plugin id="com.aptana.syncing.core"/>
+      <plugin id="com.aptana.syncing.ui"/>
+      <plugin id="com.aptana.terminal"/>
+      <plugin id="com.aptana.testing.mocks"/>
+      <plugin id="com.aptana.testing.utils"/>
+      <plugin id="com.aptana.theme"/>
+      <plugin id="com.aptana.theme.tests" fragment="true"/>
+      <plugin id="com.aptana.ui"/>
+      <plugin id="com.aptana.ui.epl"/>
+      <plugin id="com.aptana.ui.io"/>
+      <plugin id="com.aptana.ui.io.epl"/>
+      <plugin id="com.aptana.ui.override" fragment="true"/>
+      <plugin id="com.aptana.ui.s3"/>
+      <plugin id="com.aptana.usage"/>
+      <plugin id="com.aptana.webserver.core"/>
+      <plugin id="com.aptana.webserver.core.tests" fragment="true"/>
+      <plugin id="com.aptana.webserver.ui"/>
+      <plugin id="com.aptana.workbench"/>
+      <plugin id="com.ibm.icu"/>
+      <plugin id="json.simple"/>
+      <plugin id="org.apache.ant"/>
+      <plugin id="org.apache.commons.codec"/>
+      <plugin id="org.apache.commons.httpclient"/>
+      <plugin id="org.apache.commons.logging"/>
+      <plugin id="org.apache.derby"/>
+      <plugin id="org.apache.httpcomponents.httpcore"/>
+      <plugin id="org.apache.lucene"/>
+      <plugin id="org.apache.lucene.analysis"/>
+      <plugin id="org.apache.lucene.core"/>
+      <plugin id="org.eclipse.compare"/>
+      <plugin id="org.eclipse.compare.core"/>
+      <plugin id="org.eclipse.core.commands"/>
+      <plugin id="org.eclipse.core.contenttype"/>
+      <plugin id="org.eclipse.core.databinding"/>
+      <plugin id="org.eclipse.core.databinding.observable"/>
+      <plugin id="org.eclipse.core.databinding.property"/>
+      <plugin id="org.eclipse.core.expressions"/>
+      <plugin id="org.eclipse.core.filebuffers"/>
+      <plugin id="org.eclipse.core.filesystem"/>
+      <plugin id="org.eclipse.core.filesystem.win32.x86" fragment="true"/>
+      <plugin id="org.eclipse.core.jobs"/>
+      <plugin id="org.eclipse.core.net"/>
+      <plugin id="org.eclipse.core.net.win32.x86" fragment="true"/>
+      <plugin id="org.eclipse.core.resources"/>
+      <plugin id="org.eclipse.core.resources.win32.x86" fragment="true"/>
+      <plugin id="org.eclipse.core.runtime"/>
+      <plugin id="org.eclipse.core.runtime.compatibility"/>
+      <plugin id="org.eclipse.core.runtime.compatibility.registry" fragment="true"/>
+      <plugin id="org.eclipse.core.tests.harness"/>
+      <plugin id="org.eclipse.core.variables"/>
+      <plugin id="org.eclipse.debug.core"/>
+      <plugin id="org.eclipse.debug.ui"/>
+      <plugin id="org.eclipse.ecf"/>
+      <plugin id="org.eclipse.ecf.filetransfer"/>
+      <plugin id="org.eclipse.ecf.identity"/>
+      <plugin id="org.eclipse.ecf.ssl" fragment="true"/>
+      <plugin id="org.eclipse.equinox.app"/>
+      <plugin id="org.eclipse.equinox.common"/>
+      <plugin id="org.eclipse.equinox.p2.artifact.repository"/>
+      <plugin id="org.eclipse.equinox.p2.core"/>
+      <plugin id="org.eclipse.equinox.p2.director"/>
+      <plugin id="org.eclipse.equinox.p2.engine"/>
+      <plugin id="org.eclipse.equinox.p2.jarprocessor"/>
+      <plugin id="org.eclipse.equinox.p2.metadata"/>
+      <plugin id="org.eclipse.equinox.p2.metadata.repository"/>
+      <plugin id="org.eclipse.equinox.p2.operations"/>
+      <plugin id="org.eclipse.equinox.p2.repository"/>
+      <plugin id="org.eclipse.equinox.p2.ui"/>
+      <plugin id="org.eclipse.equinox.p2.ui.sdk.scheduler"/>
+      <plugin id="org.eclipse.equinox.p2.updatechecker"/>
+      <plugin id="org.eclipse.equinox.preferences"/>
+      <plugin id="org.eclipse.equinox.registry"/>
+      <plugin id="org.eclipse.equinox.security"/>
+      <plugin id="org.eclipse.equinox.security.ui"/>
+      <plugin id="org.eclipse.equinox.security.win32.x86" fragment="true"/>
+      <plugin id="org.eclipse.equinox.simpleconfigurator"/>
+      <plugin id="org.eclipse.help"/>
+      <plugin id="org.eclipse.help.base"/>
+      <plugin id="org.eclipse.help.ui"/>
+      <plugin id="org.eclipse.jdt.junit.runtime"/>
+      <plugin id="org.eclipse.jface"/>
+      <plugin id="org.eclipse.jface.databinding"/>
+      <plugin id="org.eclipse.jface.text"/>
+      <plugin id="org.eclipse.ltk.core.refactoring"/>
+      <plugin id="org.eclipse.ltk.ui.refactoring"/>
+      <plugin id="org.eclipse.osgi"/>
+      <plugin id="org.eclipse.pde.junit.runtime"/>
+      <plugin id="org.eclipse.search"/>
+      <plugin id="org.eclipse.swt"/>
+      <plugin id="org.eclipse.swt.win32.win32.x86" fragment="true"/>
+      <plugin id="org.eclipse.team.core"/>
+      <plugin id="org.eclipse.team.ui"/>
+      <plugin id="org.eclipse.test.performance"/>
+      <plugin id="org.eclipse.text"/>
+      <plugin id="org.eclipse.tm.terminal.test" fragment="true"/>
+      <plugin id="org.eclipse.ui"/>
+      <plugin id="org.eclipse.ui.browser"/>
+      <plugin id="org.eclipse.ui.console"/>
+      <plugin id="org.eclipse.ui.editors"/>
+      <plugin id="org.eclipse.ui.forms"/>
+      <plugin id="org.eclipse.ui.ide"/>
+      <plugin id="org.eclipse.ui.navigator"/>
+      <plugin id="org.eclipse.ui.navigator.resources"/>
+      <plugin id="org.eclipse.ui.views"/>
+      <plugin id="org.eclipse.ui.views.properties.tabbed"/>
+      <plugin id="org.eclipse.ui.win32" fragment="true"/>
+      <plugin id="org.eclipse.ui.workbench"/>
+      <plugin id="org.eclipse.ui.workbench.texteditor"/>
+      <plugin id="org.eclipse.update.configurator"/>
+      <plugin id="org.hamcrest.core"/>
+      <plugin id="org.jruby"/>
+      <plugin id="org.junit"/>
+      <plugin id="org.kohsuke.junit"/>
+      <plugin id="org.mozilla.rhino"/>
+      <plugin id="org.sat4j.core"/>
+      <plugin id="org.sat4j.pb"/>
+      <plugin id="org.w3c.css"/>
+   </plugins>
+
+   <features>
+      <feature id="com.aptana.feature.rcp"/>
+   </features>
+
+
+</product>

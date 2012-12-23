@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.team.core.ignore">
+      <ignore
+            enabled="true"
+            pattern=".git">
+      </ignore>
+   </extension>
+   <extension
+         point="org.eclipse.team.core.repository">
+      <repository
+            class="com.aptana.git.core.GitRepositoryProvider"
+            id="com.aptana.git.core.GitRepositoryProvider"
+            metaFilePaths=".git/HEAD,.git/index"
+            typeClass="com.aptana.git.core.GitRepositoryProviderType">
+      </repository>
+   </extension>
+   <extension
+         point="org.eclipse.core.runtime.preferences">
+      <initializer
+            class="com.aptana.git.internal.core.PreferenceInitializer">
+      </initializer>
+   </extension>
+   <extension
+         point="org.eclipse.debug.core.launchConfigurationTypes">
+      <launchConfigurationType
+            delegate="com.aptana.git.internal.core.launching.GitLaunchDelegate"
+            id="com.aptana.git.core.launchConfigurationType"
+            modes="run"
+            name="%LaunchConfigurationTypeGit.name"
+            public="false">
+      </launchConfigurationType>
+   </extension>
+</plugin>

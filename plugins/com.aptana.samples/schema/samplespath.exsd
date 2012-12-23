@@ -1,0 +1,297 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Schema file written by PDE -->
+<schema targetNamespace="com.aptana.samples" xmlns="http://www.w3.org/2001/XMLSchema">
+<annotation>
+      <appinfo>
+         <meta.schema plugin="com.aptana.samples" id="samplespath" name="Samples Path"/>
+      </appinfo>
+      <documentation>
+         This extension point allows contribution to the Samples view.  It also allows handlers to be specified for previewing and importing the samples.
+      </documentation>
+   </annotation>
+
+   <element name="extension">
+      <annotation>
+         <appinfo>
+            <meta.element />
+         </appinfo>
+      </annotation>
+      <complexType>
+         <sequence minOccurs="0" maxOccurs="unbounded">
+            <element ref="category"/>
+            <element ref="samplesinfo"/>
+         </sequence>
+         <attribute name="point" type="string" use="required">
+            <annotation>
+               <documentation>
+                  a fully qualified identifier of the target extension point
+               </documentation>
+            </annotation>
+         </attribute>
+         <attribute name="id" type="string">
+            <annotation>
+               <documentation>
+                  an optional identifier of the extension instance
+               </documentation>
+            </annotation>
+         </attribute>
+         <attribute name="name" type="string">
+            <annotation>
+               <documentation>
+                  an optional name of the extension instance
+               </documentation>
+               <appinfo>
+                  <meta.attribute translatable="true"/>
+               </appinfo>
+            </annotation>
+         </attribute>
+      </complexType>
+   </element>
+
+   <element name="category">
+      <complexType>
+         <attribute name="id" type="string" use="required">
+            <annotation>
+               <documentation>
+                  an identifier for the sample category
+               </documentation>
+            </annotation>
+         </attribute>
+         <attribute name="name" type="string" use="required">
+            <annotation>
+               <documentation>
+                  the name of the category
+               </documentation>
+               <appinfo>
+                  <meta.attribute translatable="true"/>
+               </appinfo>
+            </annotation>
+         </attribute>
+         <attribute name="icon" type="string">
+            <annotation>
+               <documentation>
+                  An optional icon to use for the category
+               </documentation>
+               <appinfo>
+                  <meta.attribute kind="resource"/>
+               </appinfo>
+            </annotation>
+         </attribute>
+         <attribute name="projectHandler" type="string">
+            <annotation>
+               <documentation>
+                  A handler for adding custom steps after the sample project is created
+               </documentation>
+               <appinfo>
+                  <meta.attribute kind="java" basedOn=":com.aptana.samples.handlers.ISampleProjectHandler"/>
+               </appinfo>
+            </annotation>
+         </attribute>
+      </complexType>
+   </element>
+
+   <element name="samplesinfo">
+      <complexType>
+         <sequence>
+            <element ref="nature" minOccurs="0" maxOccurs="unbounded"/>
+            <element ref="include" minOccurs="0" maxOccurs="unbounded"/>
+            <choice>
+               <element ref="local" minOccurs="0" maxOccurs="1"/>
+               <element ref="remote" minOccurs="0" maxOccurs="1"/>
+            </choice>
+         </sequence>
+         <attribute name="id" type="string" use="required">
+            <annotation>
+               <documentation>
+                  an identifier for the contributed sample
+               </documentation>
+            </annotation>
+         </attribute>
+         <attribute name="name" type="string" use="required">
+            <annotation>
+               <documentation>
+                  the name of the contributed sample
+               </documentation>
+               <appinfo>
+                  <meta.attribute translatable="true"/>
+               </appinfo>
+            </annotation>
+         </attribute>
+         <attribute name="category" type="string">
+            <annotation>
+               <documentation>
+                  the id of the category that the sample belongs to; if null, the sample will be put under the &quot;Others&quot; category.
+               </documentation>
+               <appinfo>
+                  <meta.attribute kind="identifier" basedOn="com.aptana.samples.samplespath/category/@id"/>
+               </appinfo>
+            </annotation>
+         </attribute>
+         <attribute name="description" type="string">
+            <annotation>
+               <documentation>
+                  a description of the sample
+               </documentation>
+               <appinfo>
+                  <meta.attribute translatable="true"/>
+               </appinfo>
+            </annotation>
+         </attribute>
+         <attribute name="infoFile" type="string">
+            <annotation>
+               <documentation>
+                  a HTML document to open to get more information on the sample
+               </documentation>
+               <appinfo>
+                  <meta.attribute kind="resource"/>
+               </appinfo>
+            </annotation>
+         </attribute>
+         <attribute name="projectHandler" type="string">
+            <annotation>
+               <documentation>
+                  a handler for adding custom steps after the sample project is created
+               </documentation>
+               <appinfo>
+                  <meta.attribute kind="java" basedOn=":com.aptana.samples.handlers.ISampleProjectHandler"/>
+               </appinfo>
+            </annotation>
+         </attribute>
+         <attribute name="previewHandler" type="string">
+            <annotation>
+               <documentation>
+                  a handler for generating preview on the sample
+               </documentation>
+               <appinfo>
+                  <meta.attribute kind="java" basedOn=":com.aptana.samples.handlers.ISamplePreviewHandler"/>
+               </appinfo>
+            </annotation>
+         </attribute>
+         <attribute name="icon" type="string">
+            <annotation>
+               <documentation>
+                  a custom icon for the sample
+               </documentation>
+               <appinfo>
+                  <meta.attribute kind="resource"/>
+               </appinfo>
+            </annotation>
+         </attribute>
+      </complexType>
+   </element>
+
+   <element name="nature">
+      <complexType>
+         <attribute name="id" type="string" use="required">
+            <annotation>
+               <documentation>
+                  the id of the nature to add to the sample project
+               </documentation>
+            </annotation>
+         </attribute>
+      </complexType>
+   </element>
+
+   <element name="include">
+      <complexType>
+         <attribute name="path" type="string" use="required">
+            <annotation>
+               <documentation>
+                  the path to the files and folders to include when this sample is created as a project
+               </documentation>
+               <appinfo>
+                  <meta.attribute kind="resource"/>
+               </appinfo>
+            </annotation>
+         </attribute>
+      </complexType>
+   </element>
+
+   <element name="local">
+      <complexType>
+         <attribute name="location" type="string" use="required">
+            <annotation>
+               <documentation>
+                  the local location containing the sample content (currently should be a zip file)
+               </documentation>
+               <appinfo>
+                  <meta.attribute kind="resource"/>
+               </appinfo>
+            </annotation>
+         </attribute>
+      </complexType>
+   </element>
+
+   <element name="remote">
+      <complexType>
+         <attribute name="location" type="string" use="required">
+            <annotation>
+               <documentation>
+                  the remote git url for the sample
+               </documentation>
+            </annotation>
+         </attribute>
+      </complexType>
+   </element>
+
+   <annotation>
+      <appinfo>
+         <meta.section type="since"/>
+      </appinfo>
+      <documentation>
+         This extension point was introduced in Aptana Studio 0.2.9 and modified in Studio 3.0.
+      </documentation>
+   </annotation>
+
+   <annotation>
+      <appinfo>
+         <meta.section type="examples"/>
+      </appinfo>
+      <documentation>
+         &lt;p&gt;
+&lt;pre&gt;
+&lt;extension point=&quot;com.aptana.samples.samplespath&quot;&gt;
+  &lt;category
+    id=&quot;com.my.xyz.category&quot;
+    name=&quot;My Category&quot;
+    icon=&quot;icons/category.png&quot;
+    projectHandler=&quot;com.my.xyz.MySampleProjectHandler&quot;&gt;
+  &lt;/category&gt;
+  &lt;samplesinfo
+    category=&quot;com.my.xyz.category&quot;
+    id=&quot;com.my.xyz.remote&quot;
+    name=&quot;Remote&quot;
+    description=&quot;Remote sample&quot;
+    infoFile=&quot;samples/helpFile.html&quot;
+    projectHandler=&quot;com.my.xyz.MySampleProjectHandler&quot;
+    previewHandler=&quot;com.my.xyz.MySamplePreviewHandler&quot;
+    icon=&quot;icons/sample.png&quot;&gt;
+    &lt;remote
+      location=&quot;git://github.com/repo/remote_sample.git&quot;&gt;
+    &lt;/remote&gt;
+    &lt;nature
+      id=&quot;com.aptana.projects.webnature&quot;&gt;
+    &lt;/nature&gt;
+    &lt;include
+      path=&quot;samples/libs&quot;&gt;
+    &lt;/include&gt;
+  &lt;/samplesinfo&gt;
+&lt;/extension&gt;
+&lt;/pre&gt;
+&lt;/p&gt;
+
+This example contributes a category for a group of samples and a sample of the category that refers to a remote git location.
+
+      </documentation>
+   </annotation>
+
+   <annotation>
+      <appinfo>
+         <meta.section type="apiInfo"/>
+      </appinfo>
+      <documentation>
+         Both the preview and project handlers are optional.  If the preview handler is missing, the preview option in the Samples view will be disabled.  If the project handler is missing, it means there will be no post-project-creation steps.
+      </documentation>
+   </annotation>
+
+</schema>

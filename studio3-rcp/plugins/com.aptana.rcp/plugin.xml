@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application
+            icon="content/window3232.png">
+         <run
+               class="com.aptana.rcp.IDEApplication">
+         </run>
+      </application>
+   </extension>
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="com.aptana.rcp.application"
+            name="Aptana Studio 3">
+         <property
+               name="aboutText"
+               value="%aboutText"/>
+         <property
+               name="aboutImage"
+               value="content/about.gif"/>
+         <property
+               name="preferenceCustomization"
+               value="preference_customization.ini"/>
+         <property
+               name="windowImages"
+               value="content/window1616.png,content/window3232.png,content/window4848.png,content/window6464.png,content/window128128.png"/>
+         <property
+               name="startupProgressRect"
+               value="0,260,590,15"/>
+         <property
+               name="appName"
+               value="Aptana Studio 3">
+         </property>
+         <property
+               name="startupMessageRect"
+               value="7,240,445,20">
+         </property>
+         <property
+               name="startupForegroundColor"
+               value="FFFFFF">
+         </property>
+      </product>
+   </extension>
+   
+   <!-- Web Browsers -->
+   <extension point="org.eclipse.ui.browser.browsers">
+      <!-- Linux -->
+      <!-- Add Firefox as an additional browser -->
+      <browser
+         id="com.aptana.browser.firefox"
+         name="%browser.firefox.name"
+         os="linux"
+         executable="firefox"
+         factoryclass="org.eclipse.ui.internal.browser.browsers.MozillaFactory">
+         <location>C:/Program Files/Mozilla Firefox/firefox.exe</location>
+      </browser>
+   </extension>
+
+   <extension
+         point="org.eclipse.core.runtime.preferences">
+      <initializer
+            class="com.aptana.rcp.preferences.PreferenceInitializer">
+      </initializer>
+   </extension>
+   
+</plugin>

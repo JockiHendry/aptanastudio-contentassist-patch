@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension-point id="com.aptana.scripting.loadPaths" name="%scripting.load.paths.extension.point" schema="schema/loadPaths.exsd"/>
+   <extension-point id="com.aptana.scripting.frameworkFiles" name="%scripting.framework.files.extension.point" schema="schema/frameworkFiles.exsd"/>
+   <extension-point id="com.aptana.scripting.contextContributors" name="%context.contributors.extension.point" schema="schema/contextContributors.exsd"/>
+   <extension-point id="com.aptana.scripting.applicationBundlePaths" name="%application.bundles.path.extension.point" schema="schema/applicationBundlePaths.exsd"/>
+   <extension
+         point="com.aptana.scripting.loadPaths">
+      <loadPath
+            path="framework/">
+      </loadPath>
+   </extension>
+   <extension
+         point="com.aptana.scripting.frameworkFiles">
+      <file
+            name="ruble/bundle.rb">
+      </file>
+      <file
+            name="ruble/command.rb">
+      </file>
+      <file
+            name="ruble/logger.rb">
+      </file>
+      <file
+            name="ruble/menu.rb">
+      </file>
+      <file
+            name="ruble/snippet.rb">
+      </file>
+      <file
+            name="ruble/snippet_category.rb">
+      </file>
+      <file
+            name="ruble/context.rb">
+      </file>
+      <file
+            name="ruble/platform.rb">
+      </file>
+      <file
+            name="ruble/template.rb">
+      </file>
+      <file
+            name="ruble/content_assist.rb">
+      </file>
+      <file
+            name="ruble/env.rb">
+      </file>
+      <file
+            name="ruble/smart_typing_pairs.rb">
+      </file>
+      <file
+            name="ruble/project_template.rb">
+      </file>
+      <file
+            name="ruble/project_sample.rb">
+      </file>
+      <file
+            name="ruble/i18n.rb">
+      </file>
+   </extension>
+   <extension
+         point="com.aptana.scripting.contextContributors">
+      <contributor
+            class="com.aptana.scripting.BundleContextContributor"
+            id="com.aptana.scripting.model.BundleSupportContextContributor"
+            name="Bundle Support Context Contributor">
+      </contributor>
+      <contributor
+            class="com.aptana.scripting.FullnameEnvContextContributor"
+            id="com.aptana.scripting.EnvContextContributor"
+            name="Environment Contributor">
+      </contributor>
+   </extension>
+   <extension
+         point="org.eclipse.ui.contexts">
+      <context
+            id="com.aptana.scripting.context"
+            name="%context.scripting.name"
+            parentId="org.eclipse.ui.contexts.window">
+      </context>
+   </extension>
+   <extension
+         point="com.aptana.buildpath.core.buildPaths">
+      <contributor
+            class="com.aptana.scripting.ScriptingBuildPathContributor"
+            id="com.aptana.scripting.buildPath.contributor"
+            name="Scripting Build Path Contributor">
+      </contributor>
+   </extension>
+   <extension
+         point="com.aptana.scripting.applicationBundlePaths">
+      <bundlePath
+            name="Default Application Bundles"
+            path="bundles/">
+      </bundlePath>
+   </extension>
+
+</plugin>

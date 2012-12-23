@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+ <extension
+         point="org.eclipse.ui.commands">
+      <command
+            categoryId="org.eclipse.ui.category.edit"
+            id="org.eclipse.ui.edit.findbar"
+            name="%ShowFindBar.command.name">
+      </command>
+      <command
+            categoryId="org.eclipse.ui.category.edit"
+            id="org.eclipse.ui.edit.findbar.hide"
+            name="%HideFindBar.command.name">
+      </command>
+      <command
+            categoryId="org.eclipse.ui.category.edit"
+            id="org.eclipse.ui.edit.findbar.findNext"
+            name="%FindNext.command.name">
+      </command>
+      <command
+            categoryId="org.eclipse.ui.category.edit"
+            id="org.eclipse.ui.edit.findbar.findNextOrPrev"
+            name="%FindNextOrPrev.command.name">
+      </command>
+      <command
+            categoryId="org.eclipse.ui.category.edit"
+            id="org.eclipse.ui.edit.findbar.findPrevious"
+            name="%FindPrevious.command.name">
+      </command>
+      <command
+            categoryId="org.eclipse.ui.category.edit"
+            id="org.eclipse.ui.edit.findbar.inputNewline"
+            name="%InputNewline.command.name">
+      </command>
+      <command
+            categoryId="org.eclipse.ui.category.edit"
+            id="org.eclipse.ui.edit.findbar.focusFind"
+            name="%FocusFind.command.name">
+      </command>
+      <command
+            categoryId="org.eclipse.ui.category.edit"
+            id="org.eclipse.ui.edit.findbar.focusFindOrOpenEclipseSearch"
+            name="%FocusFindOrEclipseSearch.command.name">
+      </command>
+      <command
+            categoryId="org.eclipse.ui.category.edit"
+            id="org.eclipse.ui.edit.findbar.focusReplace"
+            name="%FocusReplace.command.name">
+      </command>
+      <command
+            categoryId="org.eclipse.ui.category.edit"
+            id="org.eclipse.ui.edit.findbar.toggleCaseMatching"
+            name="%ToggleCaseMatching.command.name">
+      </command>
+      <command
+            categoryId="org.eclipse.ui.category.edit"
+            id="org.eclipse.ui.edit.findbar.toggleWordMatching"
+            name="%ToggleWordMatching.command.name">
+      </command>
+      <command
+            categoryId="org.eclipse.ui.category.edit"
+            id="org.eclipse.ui.edit.findbar.toggleRegexpMatching"
+            name="%ToggleRegexpMatching.command.name">
+      </command>
+      <command
+            categoryId="org.eclipse.ui.category.edit"
+            id="org.eclipse.ui.edit.findbar.toggleSearchBackward"
+            name="%ToggleSearchBackward.command.name">
+      </command>
+      <command
+            categoryId="org.eclipse.ui.category.edit"
+            id="org.eclipse.ui.edit.findbar.toggleMatchCount"
+            name="%ToggleMatchCount.command.name">
+      </command>
+      <command
+            categoryId="org.eclipse.ui.category.edit"
+            id="org.eclipse.ui.edit.findbar.toggleSearchSelection"
+            name="%ToggleSearchSelection.command.name">
+      </command>
+      <command
+            categoryId="org.eclipse.ui.category.edit"
+            id="org.eclipse.ui.edit.findbar.searchInOpenFiles"
+            name="%SearchInOpenFiles.command.name">
+      </command>
+      <command
+            categoryId="org.eclipse.ui.category.edit"
+            id="org.eclipse.ui.edit.findbar.searchInCurrentFile"
+            name="%SearchInCurrentFile.command.name">
+      </command>
+      <command
+            categoryId="org.eclipse.ui.category.edit"
+            id="org.eclipse.ui.edit.findbar.searchInEnclosingProject"
+            name="%SearchInEnclosingProject.command.name">
+      </command>
+      <command
+            categoryId="org.eclipse.ui.category.edit"
+            id="org.eclipse.ui.edit.findbar.searchInWorkspace"
+            name="%SearchInWorkspace.command.name">
+      </command>
+      <command
+            categoryId="org.eclipse.ui.category.edit"
+            id="org.eclipse.ui.edit.findbar.showOptions"
+            name="%ShowOptions.command.name">
+      </command>
+   </extension>
+
+   <extension
+         point="org.eclipse.ui.bindings">
+      
+      <!-- The following bindings are active once the Find Bar is visible -->
+      <key
+            commandId="org.eclipse.ui.edit.findbar.hide"
+            contextId="org.eclipse.ui.textEditorScope.findbar"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="ESCAPE">
+      </key>
+      <key
+            commandId="org.eclipse.ui.edit.findbar.hide"
+            contextId="org.eclipse.ui.textEditorScope.findbar"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="F12">
+      </key>
+      
+      <!-- Find Previous -->
+      <key
+            commandId="org.eclipse.ui.edit.findbar.findPrevious"
+            contextId="org.eclipse.ui.textEditorScope.findbar"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="M1+M2+K">
+      </key>
+      <key
+            commandId="org.eclipse.ui.edit.findbar.findPrevious"
+            contextId="org.eclipse.ui.textEditorScope.findbar"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="M2+ENTER">
+      </key>
+      <key
+            commandId="org.eclipse.ui.edit.findbar.findPrevious"
+            contextId="org.eclipse.ui.textEditorScope.findbar"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="M2+NUMPAD_ENTER">
+      </key>
+      
+      <!-- Find Next -->
+      <key
+            commandId="org.eclipse.ui.edit.findbar.findNext"
+            contextId="org.eclipse.ui.textEditorScope.findbar"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="M1+K">
+      </key>
+      <!-- Find Next or Prev-->
+      <key
+            commandId="org.eclipse.ui.edit.findbar.findNextOrPrev"
+            contextId="org.eclipse.ui.textEditorScope.findbar"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="ENTER">
+      </key>
+      <key
+            commandId="org.eclipse.ui.edit.findbar.findNextOrPrev"
+            contextId="org.eclipse.ui.textEditorScope.findbar"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="NUMPAD_ENTER">
+      </key>
+      <key
+            commandId="org.eclipse.ui.edit.findbar.findNextOrPrev"
+            contextId="org.eclipse.ui.textEditorScope.findbar"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="M3+N">
+      </key>
+      <key
+            commandId="org.eclipse.ui.edit.findbar.findNextOrPrev"
+            contextId="org.eclipse.ui.textEditorScope.findbar"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="F3">
+      </key>
+
+      <!-- Focus the find combo -->
+      <key
+            commandId="org.eclipse.ui.edit.findbar.focusFindOrOpenEclipseSearch"
+            contextId="org.eclipse.ui.textEditorScope.findbar"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="M1+F">
+      </key>
+      <key
+            commandId="org.eclipse.ui.edit.findbar.focusFind"
+            contextId="org.eclipse.ui.textEditorScope.findbar"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="M3+F">
+      </key>
+
+      <!-- Input newline -->
+      <key
+            commandId="org.eclipse.ui.edit.findbar.inputNewline"
+            contextId="org.eclipse.ui.textEditorScope.findbar"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="M3+ENTER">
+      </key>
+      <key
+            commandId="org.eclipse.ui.edit.findbar.inputNewline"
+            contextId="org.eclipse.ui.textEditorScope.findbar"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="M2+M3+ENTER">
+      </key>
+      
+      <!-- Focus the replace combo -->
+      <key
+            commandId="org.eclipse.ui.edit.findbar.focusReplace"
+            contextId="org.eclipse.ui.textEditorScope.findbar"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="M3+E">
+      </key>
+      <!-- Toggle case matching -->
+      <key
+            commandId="org.eclipse.ui.edit.findbar.toggleCaseMatching"
+            contextId="org.eclipse.ui.textEditorScope.findbar"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="M3+C">
+      </key>
+      <!-- Toggle word matching -->
+      <key
+            commandId="org.eclipse.ui.edit.findbar.toggleWordMatching"
+            contextId="org.eclipse.ui.textEditorScope.findbar"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="M3+W">
+      </key>
+      <!-- Toggle regexp matching -->
+      <key
+            commandId="org.eclipse.ui.edit.findbar.toggleRegexpMatching"
+            contextId="org.eclipse.ui.textEditorScope.findbar"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="M3+X">
+      </key>
+      <!-- Toggle search backward -->
+      <key
+            commandId="org.eclipse.ui.edit.findbar.toggleSearchBackward"
+            contextId="org.eclipse.ui.textEditorScope.findbar"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="M3+B">
+      </key>
+      <!-- Toggle count matches -->
+      <key
+            commandId="org.eclipse.ui.edit.findbar.toggleMatchCount"
+            contextId="org.eclipse.ui.textEditorScope.findbar"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="M3+M">
+      </key>
+      <!-- Toggle search selection -->
+      <key
+            commandId="org.eclipse.ui.edit.findbar.toggleSearchSelection"
+            contextId="org.eclipse.ui.textEditorScope.findbar"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="M3+L">
+      </key>
+      <!-- Search in open files -->
+      <key
+            commandId="org.eclipse.ui.edit.findbar.searchInOpenFiles"
+            contextId="org.eclipse.ui.textEditorScope.findbar"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="M3+S">
+      </key>
+      <!-- Search in current file -->      
+      <key
+            commandId="org.eclipse.ui.edit.findbar.searchInCurrentFile"
+            contextId="org.eclipse.ui.textEditorScope.findbar"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="M3+T">
+      </key>
+      <!-- Search in enclosing project -->
+      <key
+            commandId="org.eclipse.ui.edit.findbar.searchInEnclosingProject"
+            contextId="org.eclipse.ui.textEditorScope.findbar"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="M3+P">
+      </key>
+      <!-- Search in workspace -->
+      <key
+            commandId="org.eclipse.ui.edit.findbar.searchInWorkspace"
+            contextId="org.eclipse.ui.textEditorScope.findbar"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="M3+K">
+      </key>
+      <!-- Show the search options -->
+      <key
+            commandId="org.eclipse.ui.edit.findbar.showOptions"
+            contextId="org.eclipse.ui.textEditorScope.findbar"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="M3+O">
+      </key>
+   </extension>
+   
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            class="com.aptana.editor.findbar.impl.ShowFindBarHandler"
+            commandId="org.eclipse.ui.edit.findbar">
+         <activeWhen>
+            <with variable="activeEditor">
+                  <or>
+                     <instanceof
+                           value="com.aptana.editor.findbar.api.IFindBarDecorated">
+                     </instanceof>
+                     <adapt
+                           type="com.aptana.editor.findbar.api.IFindBarDecorated">
+                     </adapt>
+                  </or>
+            </with>
+         </activeWhen>
+         <enabledWhen>
+            <with variable="activeEditor">
+                  <or>
+                     <instanceof
+                           value="com.aptana.editor.findbar.api.IFindBarDecorated">
+                     </instanceof>
+                     <adapt
+                           type="com.aptana.editor.findbar.api.IFindBarDecorated">
+                     </adapt>
+                  </or>
+            </with>
+         </enabledWhen>
+      </handler>
+   </extension>
+   
+   <extension
+         point="org.eclipse.ui.contexts">
+      <context
+            description="%FindBar.context.description"
+            id="org.eclipse.ui.textEditorScope.findbar"
+            name="%FindBar.context.name"
+            parentId="org.eclipse.ui.textEditorScope">
+      </context>
+   </extension>
+   
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            category="com.aptana.ui.AptanaPreferencePage"
+            class="com.aptana.editor.findbar.preferences.FindBarPreferencePage"
+            id="com.aptana.editor.findbar.preferences.FindBarPreferencePage"
+            name="%FindBar.preferences.name"/>
+   </extension>
+   <extension
+         point="org.eclipse.core.runtime.preferences">
+      <initializer
+            class="com.aptana.editor.findbar.preferences.FindBarPreferencesInitializer">
+      </initializer>
+   </extension>
+
+</plugin>
