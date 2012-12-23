@@ -29,6 +29,10 @@ Features
 
 ![jQuery content assist works not only in Javascript file but also in HTML file](https://github.com/JockiHendry/aptanastudio-contentassist-patch/wiki/screenshot4.png)
 
+*  Support inline JSDoc for function parameter.
+
+![Support inline JSDoc for function parameter](https://github.com/JockiHendry/aptanastudio-contentassist-patch/wiki/screenshot5.png)
+
 Getting Started
 ---------------
 1.  Download `aptanastudio3_patched.zip` and `jquery-1.8.3.sdocml`.
@@ -38,7 +42,7 @@ Getting Started
 5.  Create a new web project by selecting *File*, *New*, *Web Project*.  Enter project name and click *Finish*.
 6.  Copy and paste `jquery-1.8.3.sdocml` to the new project. This file can be in anywhere as long as it is inside
     the current project.  Without this file, jQuery content assist will not work properly.
-7.  Copy and paste `jquery-x.x.x.js` to the new project.  This is jQuery script files that can be downloaded from
+7.  Copy and paste `jquery-x.x.x.js` to the new project.  This is a jQuery script file that can be downloaded from
     jQuery official sites or linked from a CDN.
 8.  Create a new file by right clicking the project and selecting *New*, *File*.  Enter file name such as `myscript.js`.
     Click *Finish*.
