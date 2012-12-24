@@ -2,7 +2,7 @@
 <feature
       id="com.aptana.feature.rcp"
       label="%featureName"
-      version="3.4.0.qualifier"
+      version="3.4.1.qualifier"
       provider-name="%providerName"
       plugin="com.aptana.branding">
 
@@ -69,91 +69,91 @@
          id="com.aptana.rcp"
          download-size="0"
          install-size="0"
-         version="3.4.0.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.equinox.simpleconfigurator"
          download-size="0"
          install-size="0"
-         version="1.0.200.v20110815-1438"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.help.base"
          download-size="0"
          install-size="0"
-         version="3.6.2.v201202080800"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="org.apache.lucene.analysis"
          download-size="0"
          install-size="0"
-         version="2.9.1.v201101211721"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="org.apache.lucene"
          download-size="0"
          install-size="0"
-         version="2.9.1.v201101211721"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.ecf"
          download-size="0"
          install-size="0"
-         version="3.1.300.v20110531-2218"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.ecf.filetransfer"
          download-size="0"
          install-size="0"
-         version="5.0.0.v20110531-2218"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.ecf.identity"
          download-size="0"
          install-size="0"
-         version="3.1.100.v20110531-2218"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="org.apache.commons.codec"
          download-size="0"
          install-size="0"
-         version="1.3.0.v201101211617"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="org.apache.commons.httpclient"
          download-size="0"
          install-size="0"
-         version="3.1.0.v201012070820"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.ecf.provider.filetransfer"
          download-size="0"
          install-size="0"
-         version="3.2.0.v20110531-2218"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.ecf.provider.filetransfer.httpclient"
          download-size="0"
          install-size="0"
-         version="4.0.0.v20110531-2218"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.ecf.provider.filetransfer.httpclient.ssl"
          download-size="0"
          install-size="0"
-         version="1.0.0.v20110531-2218"
+         version="0.0.0"
          fragment="true"
          unpack="false"/>
 
@@ -161,7 +161,7 @@
          id="org.eclipse.ecf.provider.filetransfer.ssl"
          download-size="0"
          install-size="0"
-         version="1.0.0.v20110531-2218"
+         version="0.0.0"
          fragment="true"
          unpack="false"/>
 
@@ -169,7 +169,7 @@
          id="org.eclipse.ecf.ssl"
          download-size="0"
          install-size="0"
-         version="1.0.100.v20110531-2218"
+         version="0.0.0"
          fragment="true"
          unpack="false"/>
 
@@ -177,7 +177,7 @@
          id="org.eclipse.equinox.concurrent"
          download-size="0"
          install-size="0"
-         version="1.0.200.v20110502"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
@@ -185,7 +185,7 @@
          os="aix,hpux,linux,macosx,qnx,solaris"
          download-size="0"
          install-size="0"
-         version="3.0.0.qualifier"
+         version="0.0.0"
          fragment="true"
          unpack="false"/>
 
@@ -193,167 +193,167 @@
          id="com.aptana.branding"
          download-size="0"
          install-size="0"
-         version="3.4.0.qualifier"/>
+         version="0.0.0"/>
 
    <plugin
          id="com.aptana.browser"
          download-size="0"
          install-size="0"
-         version="3.0.0.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.build.ui"
          download-size="0"
          install-size="0"
-         version="3.0.0.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.buildpath.core"
          download-size="0"
          install-size="0"
-         version="3.1.0.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.commandline.launcher"
          download-size="0"
          install-size="0"
-         version="3.0.3.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.configurations"
          download-size="0"
          install-size="0"
-         version="3.0.3.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.console"
          download-size="0"
          install-size="0"
-         version="3.0.0.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.core"
          download-size="0"
          install-size="0"
-         version="3.3.0.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.core.epl"
          download-size="0"
          install-size="0"
-         version="3.0.0.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.core.io"
          download-size="0"
          install-size="0"
-         version="3.0.3.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.debug.core"
          download-size="0"
          install-size="0"
-         version="3.0.3.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.debug.ui"
          download-size="0"
          install-size="0"
-         version="3.0.3.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.deploy"
          download-size="0"
          install-size="0"
-         version="3.0.3.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.deploy.capistrano"
          download-size="0"
          install-size="0"
-         version="3.0.3.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.deploy.engineyard"
          download-size="0"
          install-size="0"
-         version="3.0.3.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.deploy.epl"
          download-size="0"
          install-size="0"
-         version="3.0.0.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.deploy.heroku"
          download-size="0"
          install-size="0"
-         version="3.0.3.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.deploy.ui"
          download-size="0"
          install-size="0"
-         version="1.0.0.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.documentation"
          download-size="0"
          install-size="0"
-         version="3.0.0.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.eclipse.fullscreen.ui"
          download-size="0"
          install-size="0"
-         version="1.0.4.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.editor.beaver"
          download-size="0"
          install-size="0"
-         version="3.0.0.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.editor.coffee"
          download-size="0"
          install-size="0"
-         version="3.0.0.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.editor.common"
          download-size="0"
          install-size="0"
-         version="3.0.3.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.editor.common.override"
          download-size="0"
          install-size="0"
-         version="1.0.0.qualifier"
+         version="0.0.0"
          fragment="true"
          unpack="false"/>
 
@@ -361,49 +361,49 @@
          id="com.aptana.editor.css"
          download-size="0"
          install-size="0"
-         version="3.0.3.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.editor.css.formatter"
          download-size="0"
          install-size="0"
-         version="3.0.0.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.editor.diff"
          download-size="0"
          install-size="0"
-         version="3.0.0.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.editor.dtd"
          download-size="0"
          install-size="0"
-         version="3.0.0.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.editor.epl"
          download-size="0"
          install-size="0"
-         version="3.0.0.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.editor.findbar"
          download-size="0"
          install-size="0"
-         version="3.0.0.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.editor.findbar.override"
          download-size="0"
          install-size="0"
-         version="1.0.0.qualifier"
+         version="0.0.0"
          fragment="true"
          unpack="false"/>
 
@@ -411,317 +411,317 @@
          id="com.aptana.editor.html"
          download-size="0"
          install-size="0"
-         version="3.0.3.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.editor.html.formatter"
          download-size="0"
          install-size="0"
-         version="3.0.3.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.editor.idl"
          download-size="0"
          install-size="0"
-         version="3.0.0.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.editor.js"
          download-size="0"
          install-size="0"
-         version="3.0.3.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.editor.js.formatter"
          download-size="0"
          install-size="0"
-         version="3.0.3.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.editor.json"
          download-size="0"
          install-size="0"
-         version="3.0.0.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.editor.markdown"
          download-size="0"
          install-size="0"
-         version="3.0.0.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.editor.svg"
          download-size="0"
          install-size="0"
-         version="3.0.3.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.editor.text"
          download-size="0"
          install-size="0"
-         version="3.0.0.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.editor.xml"
          download-size="0"
          install-size="0"
-         version="3.0.0.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.editor.xml.formatter"
          download-size="0"
          install-size="0"
-         version="3.0.0.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.editor.yaml"
          download-size="0"
          install-size="0"
-         version="3.0.0.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.explorer"
          download-size="0"
          install-size="0"
-         version="3.0.0.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.filesystem.http"
          download-size="0"
          install-size="0"
-         version="3.0.0.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.filesystem.s3"
          download-size="0"
          install-size="0"
-         version="3.0.0.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.filewatcher"
          download-size="0"
          install-size="0"
-         version="3.0.1.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.formatter.epl"
          download-size="0"
          install-size="0"
-         version="3.2.0.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.formatter.ui.epl"
          download-size="0"
          install-size="0"
-         version="3.0.0.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.git.core"
          download-size="0"
          install-size="0"
-         version="3.0.0.qualifier"/>
+         version="0.0.0"/>
 
    <plugin
          id="com.aptana.git.ui"
          download-size="0"
          install-size="0"
-         version="3.0.3.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.ide.libraries.subscription"
          download-size="0"
          install-size="0"
-         version="2.0.3.qualifier"/>
+         version="0.0.0"/>
 
    <plugin
          id="com.aptana.ide.security.linux"
          download-size="0"
          install-size="0"
-         version="2.0.0.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.index.core"
          download-size="0"
          install-size="0"
-         version="3.0.0.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.index.core.ui"
          download-size="0"
          install-size="0"
-         version="3.0.0.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.jetty.util.epl"
          download-size="0"
          install-size="0"
-         version="3.0.0.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.jira.core"
          download-size="0"
          install-size="0"
-         version="1.0.0.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.jira.ui"
          download-size="0"
          install-size="0"
-         version="1.0.0.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.js.core"
          download-size="0"
          install-size="0"
-         version="3.0.0.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.js.debug.core"
          download-size="0"
          install-size="0"
-         version="3.0.3.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.js.debug.core.ie"
          download-size="0"
          install-size="0"
-         version="3.0.0.qualifier"
+         version="0.0.0"
          fragment="true"/>
 
    <plugin
          id="com.aptana.js.debug.core.v8"
          download-size="0"
          install-size="0"
-         version="3.0.0.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.js.debug.ui"
          download-size="0"
          install-size="0"
-         version="3.0.0.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.js.debug.v8.ui"
          download-size="0"
          install-size="0"
-         version="3.0.0.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.libraries"
          download-size="0"
          install-size="0"
-         version="3.0.0.qualifier"/>
+         version="0.0.0"/>
 
    <plugin
          id="com.aptana.org.eclipse.tm.terminal"
          download-size="0"
          install-size="0"
-         version="3.1.0.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.parsing"
          download-size="0"
          install-size="0"
-         version="3.0.0.qualifier"/>
+         version="0.0.0"/>
 
    <plugin
          id="com.aptana.portablegit.win32"
          download-size="0"
          install-size="0"
-         version="3.0.0.qualifier"/>
+         version="0.0.0"/>
 
    <plugin
          id="com.aptana.portal.ui"
          download-size="0"
          install-size="0"
-         version="3.0.0.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.portal.ui.eclipse36"
          download-size="0"
          install-size="0"
-         version="3.0.0.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.preview"
          download-size="0"
          install-size="0"
-         version="3.0.0.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.projects"
          download-size="0"
          install-size="0"
-         version="3.0.0.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.samples"
          download-size="0"
          install-size="0"
-         version="3.0.0.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.samples.ui"
          download-size="0"
          install-size="0"
-         version="3.0.0.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.scripting"
          download-size="0"
          install-size="0"
-         version="3.0.0.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.scripting.ui"
          download-size="0"
          install-size="0"
-         version="3.0.0.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.scripting.ui.override"
          download-size="0"
          install-size="0"
-         version="1.0.0.qualifier"
+         version="0.0.0"
          fragment="true"
          unpack="false"/>
 
@@ -729,69 +729,69 @@
          id="com.aptana.swt.webkitbrowser"
          download-size="0"
          install-size="0"
-         version="0.1.0.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.syncing.core"
          download-size="0"
          install-size="0"
-         version="3.0.0.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.syncing.ui"
          download-size="0"
          install-size="0"
-         version="3.0.3.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.terminal"
          download-size="0"
          install-size="0"
-         version="3.0.0.qualifier"/>
+         version="0.0.0"/>
 
    <plugin
          id="com.aptana.theme"
          download-size="0"
          install-size="0"
-         version="3.0.0.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.ui"
          download-size="0"
          install-size="0"
-         version="3.1.4.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.ui.epl"
          download-size="0"
          install-size="0"
-         version="3.0.0.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.ui.io"
          download-size="0"
          install-size="0"
-         version="3.0.0.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.ui.io.epl"
          download-size="0"
          install-size="0"
-         version="3.0.0.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.ui.override"
          download-size="0"
          install-size="0"
-         version="1.0.0.qualifier"
+         version="0.0.0"
          fragment="true"
          unpack="false"/>
 
@@ -799,35 +799,35 @@
          id="com.aptana.ui.s3"
          download-size="0"
          install-size="0"
-         version="3.0.0.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.usage"
          download-size="0"
          install-size="0"
-         version="3.0.0.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.webserver.core"
          download-size="0"
          install-size="0"
-         version="3.0.0.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.webserver.ui"
          download-size="0"
          install-size="0"
-         version="3.0.0.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
    <plugin
          id="com.aptana.workbench"
          download-size="0"
          install-size="0"
-         version="3.0.0.qualifier"
+         version="0.0.0"
          unpack="false"/>
 
 </feature>
