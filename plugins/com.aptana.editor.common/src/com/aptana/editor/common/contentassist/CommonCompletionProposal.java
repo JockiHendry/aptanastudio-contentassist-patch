@@ -337,7 +337,8 @@ public class CommonCompletionProposal implements ICommonCompletionProposal, ICom
 
 			try
 			{
-				document.replace(offset, length, toReplace);
+				//document.replace(offset, length, toReplace);
+				document.replace(offset, 0, toReplace); // always insert
 			}
 			catch (BadLocationException x)
 			{
