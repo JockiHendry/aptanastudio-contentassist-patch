@@ -20,6 +20,10 @@ Features
 
 ![Content assist still working when chaining function call](https://github.com/JockiHendry/aptanastudio-contentassist-patch/wiki/screenshot2.png)
 
+*  Support CSS id and class completion inside JavaScript String.
+
+![Id and CSS completion inside JavaScript String](http://thesolidsnake.files.wordpress.com/2012/12/gambar19.png)
+
 *  Context info will be displayed for selected jQuery function proposal.  Description for parameters are taken from
     jQuery API documentation.  Context info for some proposals also include example.
 
