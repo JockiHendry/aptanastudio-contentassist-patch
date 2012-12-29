@@ -35,8 +35,10 @@ Features
 
 Getting Started
 ---------------
-1.  Download `aptanastudio3_patched.zip` and `jquery-1.8.3.sdocml`.
-2.  Extract the zip file to a folder.
+1.  Click on **ZIP** button to download this repository as a zip file.  If you plan to modify the source code, you
+    should clone this repository using git.  Otherwise, you will only need to find `aptanastudio3_patched.zip` and 
+    `jquery-1.8.3.sdocml` inside the zip file.
+2.  Extract `aptanastudio3_patched.zip` into a folder.
 3.  Inside `aptana` folder, double click on `AptanaStudio3.exe`.
 4.  Wait for Aptana Studio 3 to launch.
 5.  Create a new web project by selecting *File*, *New*, *Web Project*.  Enter project name and click *Finish*.
