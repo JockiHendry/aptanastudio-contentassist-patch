@@ -322,13 +322,15 @@ public class CommonCompletionProposal implements ICommonCompletionProposal, ICom
 
 		if (shift < this._replacementString.length())
 		{
-			int length = Math.max(0, this._replacementLength - shift);
+			//int length = Math.max(0, this._replacementLength - shift);
+			int length = 0;
 			String toReplace = this._replacementString.substring(shift);
 
 			if (!validPrefix || validPrefix && !validPrefixCaseSensitive)
 			{
+				length = Math.max(0, offset - _replacementOffset);
 				offset = this._replacementOffset;
-			}
+			} 
 
 			if (addedTrigger)
 			{
@@ -337,8 +339,7 @@ public class CommonCompletionProposal implements ICommonCompletionProposal, ICom
 
 			try
 			{
-				//document.replace(offset, length, toReplace);
-				document.replace(offset, 0, toReplace); // always insert
+				document.replace(offset, length, toReplace); 
 			}
 			catch (BadLocationException x)
 			{
