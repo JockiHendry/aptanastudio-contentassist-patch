@@ -33,6 +33,7 @@ import com.aptana.editor.common.text.rules.ISubPartitionScanner;
 import com.aptana.editor.common.text.rules.ResumableSingleLineRule;
 import com.aptana.editor.common.text.rules.SubPartitionScanner;
 import com.aptana.editor.common.text.rules.ThemeingDamagerRepairer;
+import com.aptana.editor.js.contentassist.JQuerySelectorContentAssistProcessor;
 import com.aptana.editor.js.contentassist.JSContentAssistProcessor;
 import com.aptana.editor.js.text.JSCodeScanner;
 import com.aptana.editor.js.text.JSDocScanner;
@@ -64,7 +65,7 @@ public class JSSourceConfiguration implements IPartitioningConfiguration, ISourc
 	private IPredicateRule[] partitioningRules = new IPredicateRule[] {
 			new EndOfLineRule("//", getToken(JS_SINGLELINE_COMMENT)), //$NON-NLS-1$
 			new ResumableSingleLineRule("\"", "\"", new ExtendedToken(getToken(STRING_DOUBLE)), '\\', true), //$NON-NLS-1$ //$NON-NLS-2$
-			new ResumableSingleLineRule("\'", "\'", new ExtendedToken(getToken(STRING_SINGLE)), '\\', true), //$NON-NLS-1$ //$NON-NLS-2$
+			new ResumableSingleLineRule("\'", "\'", new ExtendedToken(getToken(STRING_SINGLE)), '\\', true), //$NON-NLS-1$ //$NON-NLS-2$			
 			new EmptyCommentRule(getToken(JS_MULTILINE_COMMENT)),
 			new MultiLineRule("/**", "*/", getToken(JS_DOC), (char) 0, true), //$NON-NLS-1$ //$NON-NLS-2$
 			new MultiLineRule("/*", "*/", getToken(JS_MULTILINE_COMMENT), (char) 0, true), //$NON-NLS-1$ //$NON-NLS-2$
@@ -206,6 +207,9 @@ public class JSSourceConfiguration implements IPartitioningConfiguration, ISourc
 		if (IDocument.DEFAULT_CONTENT_TYPE.equals(contentType) || JSSourceConfiguration.DEFAULT.equals(contentType))
 		{
 			return new JSContentAssistProcessor(editor);
+		} else if (STRING_DOUBLE.equals(contentType) || STRING_SINGLE.equals(contentType)) {
+			// TODO: This should apply only to jQuery selector, not all string!
+			return new JQuerySelectorContentAssistProcessor(editor);
 		}
 		return null;
 	}

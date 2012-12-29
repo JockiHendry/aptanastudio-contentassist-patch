@@ -24,13 +24,14 @@ Require-Bundle: org.mozilla.rhino,
  com.aptana.theme,
  com.aptana.index.core.ui,
  com.aptana.editor.common,
- com.aptana.build.ui
+ com.aptana.build.ui,
+ com.aptana.editor.css;bundle-version="3.0.3"
 Bundle-RequiredExecutionEnvironment: J2SE-1.5
 Bundle-ActivationPolicy: lazy
 Bundle-Localization: plugin
 Export-Package: com.aptana.editor.js,
  com.aptana.editor.js.contentassist,
- com.aptana.editor.js.internal.text;x-friends:="com.aptana.editor.html",
+ com.aptana.editor.js.internal.text;x-friends:="com.aptana.editor.html,com.aptana.editor.js",
  com.aptana.editor.js.outline,
  com.aptana.editor.js.text,
  com.aptana.editor.js.text.rules
